@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+<html>
+<title>
+    Input-Output
+</title>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="check.js"></script>
+
+</head>
+
+
+<body>
+
+    <!--   <div class="navigation">
+     
+      <div class="nav1"><a href="#"> Student Registration Details </a></div>
+      <div class=nav2><a href="quiz.html">Test Your Knowledge</a></div>
+   </div> 
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      -->
+
+    <div class="logoHeader">
+        <img src="images/vlabs.jpg" class="vlabLogo">
+
+        <div class="headerLink">
+
+            <div class="headerLink1"><a href="introduction.html">INTRODUCTION</a></div>
+            <div class="headerLink1"><a href="#">COMMANDS</a></div>
+            <div class="headerLink1"><a href="shellscript.html">SHELL SCRIPT</a>
+
+                <!--<div class="dropdownContent">
+                    <a href="ssShell.html">Knowing your Shell</a>
+                    <a href="ssGcd.html">Shell script to find GCD of two numbers</a>
+                    <a href="ssFactorial.html">Shell script to find Factorial of a Number</a>
+                </div>  -->
+
+            </div>
+            <div class="headerLink1"><a href="#">QUIZ</a></div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <hr class="headerBorder">
+
+
+
+
+
+
+    <!--            Input-Output Variables   -->
+
+    <h1 class="sectionHeader"> Shell script to demonstrate Input/Output </h1>
+    <!--   Section Heading    -->
+    <hr class="rowBorder">
+    <!--     Horizontal Row Border    -->
+    <p>&nbsp;</p>
+
+    <div class="textBox">
+        <!--  Box where text is added -->
+
+        A fundamental aspect of working with Shell scripts is working with input, output, and returning those results. There are different editors like nano, vim, gedit etc 
+        where we can write our script and take input and produce output. The below program will take your name as input and output the same.
+
+        <p>&nbsp;</p>
+        
+        #!/bin/bash
+        <br>
+        echo "Enter your name: "
+        <br>
+        read name
+        <br>
+        echo
+        <br>
+        echo "Your name is: "  $name
+        <br>
+        echo
+
+        <p>&nbsp;</p>
+        If we store this program as test.sh, we will run it as: bash test.sh .
+
+        <p>&nbsp;</p>
+
+        <div><img src="images/screenshots/2.png" style="height:200px"></div>
+
+
+    </div>
+    <br><br>
+    <p>&nbsp;</p>
+
+</body>
+
+
+</html>
