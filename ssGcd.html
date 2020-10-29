@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+<html>
+<title>
+    GCD of 2 numbers
+</title>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="check.js"></script>
+
+</head>
+
+
+<body>
+
+    <!--   <div class="navigation">
+     
+      <div class="nav1"><a href="#"> Student Registration Details </a></div>
+      <div class=nav2><a href="quiz.html">Test Your Knowledge</a></div>
+   </div> 
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      -->
+
+    <div class="logoHeader">
+        <img src="images/vlabs.jpg" class="vlabLogo">
+
+        <div class="headerLink">
+
+            <div class="headerLink1"><a href="introduction.html">INTRODUCTION</a></div>
+            <div class="headerLink1"><a href="#">COMMANDS</a></div>
+            <div class="headerLink1"><a href="shellscript.html">SHELL SCRIPT</a>
+
+                <!--<div class="dropdownContent">
+                    <a href="ssShell.html">Knowing your Shell</a>
+                    <a href="ssGcd.html">Shell script to find GCD of two numbers</a>
+                    <a href="ssFactorial.html">Shell script to find Factorial of a Number</a>
+                </div>  -->
+
+
+
+
+
+
+            </div>
+            <div class="headerLink1"><a href="#">QUIZ</a></div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <hr class="headerBorder">
+
+
+
+
+
+
+    <!--            GCD of 2 numbers     -->
+
+    <h1 class="sectionHeader"> Shell script to find GCD of two numbers </h1>
+    <!--   Section Heading    -->
+    <hr class="rowBorder">
+    <!--     Horizontal Row Border    -->
+    <p>&nbsp;</p>
+
+    <div class="textBox">
+        <!--  Box where text is added -->
+        In mathematics, the greatest common divisor (gcd) of two or more integers, which are not all zero,
+         is the largest positive integer that divides each of the integers.
+
+        <p>&nbsp;</p>
+
+        echo "Enter two numbers with space in between: "
+        <br>
+        read x y
+        <br>
+        m=$x
+        <br>
+        if [ $y -lt $m ]
+        <br>
+        then m=$y
+        <br>
+        fi
+        <br>
+        while [ $m -ne 0 ]
+        <br>
+        do
+        <br>
+        a=`expr $x % $m`
+        <br>
+        b=`expr $y % $m` #If both a and b are 0, then task done
+        <br>
+        if [ $a -eq 0 -a $b -eq 0 ]
+        <br>
+        then
+        <br>
+        echo "GCD of $x and $y is: $m"
+        <br>
+        break
+        <br>
+        fi
+        <br>
+        m=`expr $m - 1`
+        <br>
+        done
+        
+        <p>&nbsp;</p>
+        If we save this file as gcd.sh, then we will run it as: bash gcd.sh
+        <p>&nbsp;</p>
+
+        <div><img src="images/screenshots/5.png" style="height:200px"></div>
+
+
+    </div>
+    <br><br>
+    <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
