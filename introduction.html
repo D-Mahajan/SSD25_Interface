@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+<html>
+<title>
+    Introduction
+</title>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="check.js"></script>
+
+</head>
+
+
+<body>
+
+    <!--   <div class="navigation">
+     
+      <div class="nav1"><a href="#"> Student Registration Details </a></div>
+      <div class=nav2><a href="quiz.html">Test Your Knowledge</a></div>
+   </div> 
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      -->
+
+    <div class="logoHeader">
+        <img src="images/vlabs.jpg" class="vlabLogo">
+
+        <div class="headerLink">
+
+            <div class="headerLink1"><a href="#">INTRODUCTION</a></div>
+            <div class="headerLink1"><a href="#">COMMANDS</a></div>
+            <div class="headerLink1"><a href="#">SHELL SCRIPT</a>
+
+                <div class="dropdownContent">
+                    <a href="ssShell.html">Knowing your Shell</a>
+                    <a href="ssGcd.html">Shell script to find GCD of two numbers</a>
+                    <a href="ssFactorial.html">Shell script to find Factorial of a Number</a>
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="headerLink1"><a href="#">QUIZ</a></div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <hr class="headerBorder">
+
+
+
+
+
+
+    <!--            Introduction     -->
+
+    <h1 class="sectionHeader"> Introduction </h1>
+    <!--   Section Heading    -->
+    <hr class="rowBorder">
+    <!--     Horizontal Row Border    -->
+    <p>&nbsp;</p>
+
+    <div class="textBox">
+        <!--  Box where text is added -->
+
+        When you work with Shell Scripts in UNIX or Linux, you always must consider the SHELL that you are using whether it’s a BashShell, a KornShell, a C Shell and so on. The reason is because the syntax is a little different in the handling of variables and
+        functions etc. As part of examples used as part of this document, we use BashShell. First, to verify the shell you are using in UNIX/Linux – type echo $SHELL. Now SHELL is a variable name and its uppercase. So $SHELL will report back to Shell
+        that we are currently using and it reports /bin/bash where bash is Bourne-again SHELL. echo $SHELL – gives you the type of the shell echo $HOME – happens to be the parent directory of all user specific directories We use nano editor to create
+        shell scripts with the SHELL.
+        <p>&nbsp;</p>
+        We usually save the shell scripts using .sh extension as it is a commonly used convention. .sh is for UNIX/Linux to understand that this is a script and does not hold a similar prominence for file extension as in regard to Windows OS. Include #!/bin/bash
+        on top of the script to know that the script was written in BASH Shell. Below is the Hello World bash script – script1.sh. Line starting with # is a comment line. #!/bin/bash #Display a message clear echo “Hello World” Ctrl+O to SAVE. Ctrl+O will
+        write it out to the file system. So, the file name is already there. I'm going to press Enter and then I'll press Ctrl+X to exit. To execute this script ./script1.sh needs to be called from the Shell prompt. To execute a file, we need to have
+        required permissions on the file. ls -l command will give us the permission matrix on the files available on the respective directory. ls -a will list all files along with the hidden files which are set with (.) in the beginning of their name.
+        <p>&nbsp;</p>
+        Permissions set -rw-r- -r- - [Owner][Owning Group][EveryoneElse]. The permission set, we've got read and write for the owner. We've got read for the owning group. So as the owner is root. The owning group is also called root and then we've got read for
+        everyone else. What we don't have is execute for anybody. So, for example, if I type in change mode or chmod +x to add the execute permission, and then we apply that to script1.sh and now let's do a ls -l, the permission set will be updated to
+        -rwxrwxrwx. Notice that we've got an x now for the owner, for the owning group, and for everybody.
+
+    </div>
+    <br><br>
+    <p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
