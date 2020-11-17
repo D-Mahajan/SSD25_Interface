@@ -24,6 +24,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src='tabs.js'></script>
     <script type="text/javascript" src='check.js'></script>
     <script>
@@ -40,6 +41,39 @@
         ga('create', 'UA-67558473-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <style>
+
+        /* CSS By Kishore Narang @ www.kishorenarang.com */
+        table.kishore-table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td.kishore-td{
+            padding: 10px;
+        }
+        td.kishore-text-right
+        {
+            text-align: right;;
+        }
+
+        .textBox
+        {
+            overflow:auto;
+        }
+        @media only screen and (max-width:690px) {
+
+
+            td.kishore-td{
+                display: block;
+                width: 100%;;
+            }
+            
+
+            .formInput{
+                width: inherit;;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top" class="index">
@@ -132,43 +166,56 @@
                     <div class="col-md-10 lab-list-col-10">
 
                         <!--edit -->
-                        <h1 class="text-h2-lightblue">Linux Virtual Lab</h1>
-                        <div>
-                            <br>
-                            <ul id="list-of-experiments">
-                                <li>
-                                    <!--Link and name of the experiment 1 -->
-                                    <a href="shell1/theory.html">
-                                        Knowing your Shell
-                                    </a>
-                                </li>
-                                <li>
-                                    <!--Link and name of the experiment 1 -->
-                                    <a href="shell2/theory.html">
-                                        Shell script to demonstrate Input/Output
-                                    </a>
-                                </li>
-                                <li>
-                                    <!--Link and name of the experiment 1 -->
-                                    <a href="shell3/theory.html">
-                                        Shell script to demonstrate Functions
-                                    </a>
-                                </li>
-                                <li>
-                                    <!--Link and name of the experiment 1 -->
-                                    <a href="shell4/theory.html">
-                                        Shell script to find GCD of Two Numbers
-                                    </a>
-                                </li>
-                                <li>
-                                    <!--Link and name of the experiment 1 -->
-                                    <a href="shell5/theory.html">
-                                        Shell script to find Factorial of a Number
-                                    </a>
-                                </li>
+                        <h1 class="sectionHeader"> Student Login Details - Linux Labs</h1>
+                        <!--   Section Heading    -->
+                        <hr class="rowBorder">
+                        <!--     Horizontal Row Border    -->
+                        <p>&nbsp;</p>
 
-                            </ul>
+                        <div class="textBox">
+                            <!--  Box where text is added -->
+
+                            <span class="validateText"> Kindly submit your details. </span>
+                            <p>&nbsp;</p>
+                            <br>
+
+
+                            <div class="valEmail">
+
+                                <form action="introduction.html" onsubmit="return validateEmail(this)">
+
+                                    <table class="kishore-table">
+                                        <tr>
+                                            <td class="kishore-td">
+                                                <span class="formDetails">Name : </span>
+                                            </td>
+                                            <td class="kishore-td">
+                                                <input type="text" name="userName" class="form-control formInput">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="kishore-td">
+                                                <span class="formDetails">Student Email : </span>
+                                            </td>
+                                            <td class="kishore-td">
+                                                <input type="text" name="userEmail" class="form-control formInput">
+                                            </td>
+                                        </tr>
+                                   </table>
+                                    <!--   <span class="formDetails1">Faculty Email : </span>  &nbsp;  &nbsp;  <input type="text" name="facultyEmail" class="formInput1"><br><br>  -->
+                                    <button type="submit" value="Submit" class="submitBtn">Submit</button>
+
+
+
+
+                                </form>
+
+                                <!--  <div id="fnResult"></div><br>   -->
+
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
