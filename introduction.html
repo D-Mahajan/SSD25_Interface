@@ -56,7 +56,7 @@
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
 			                </button>
-                        <a class="navbar-brand main-logo-a" href="index.html"><img src="images/logo-new.png" class="img-responsive main-logo" /></a>
+                        <a class="navbar-brand main-logo-a" href="http://vlabs.ac.in/index.html"><img src="images/logo-new.png" class="img-responsive main-logo" /></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -107,7 +107,7 @@
 
             <!-- =================================================================================================================================== -->
             <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
-                <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; "><a href="introduction.html" class="sidebar-a">Computer Science & Engineering</a><br/></h2>
+                <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; "><a href="http://vlabs.ac.in/computer-science-and-engineering-labs.html" class="sidebar-a">Computer Science & Engineering</a><br/></h2>
 
                 <div class="row">
                     <div class="col-md-2 sidebar-col-2">
@@ -115,17 +115,14 @@
                         <a href="introduction.html" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3>
                         </a>
-                        <a href="commands.html" class="sidebar-a">
+                        <a href="#" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Linux Commands</h3>
                         </a>
                         <a href="shellscript.html" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Shell Script</h3>
                         </a>
-                        <a href="quiz.html" class="sidebar-a">
-                            <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quiz</h3>
-                        </a>
                         <a href="#" class="sidebar-a">
-                            <h3 class="text-h3-darkblue" style="margin-top: 2px;">Linux Lab</h3>
+                            <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quiz</h3>
                         </a>
                     </div>
 
@@ -135,25 +132,27 @@
                         <h1 class="text-h2-lightblue">Linux Virtual Lab</h1>
                         <div>
                             <br>
-                            <!-- <p>
-                                When you work with Shell Scripts in UNIX or Linux, you always must consider the SHELL that you are using whether it’s a BashShell, a KornShell, a C Shell and so on. The reason is because the syntax is a little different in the handling of variables and
-                                functions etc. As part of examples used as part of this document, we use BashShell. First, to verify the shell you are using in UNIX/Linux type – <br>
-                                <span class="code">echo $SHELL </span> <br>  -->
-                                <!-- <code>echo $SHELL</code> <br><br> Now SHELL is a variable name and its uppercase. So $SHELL will report back to Shell that we are currently using and it reports <code>/bin/bash</code> where bash is Bourne-again SHELL. echo $SHELL – gives
-                                you the type of the shell echo $HOME – happens to be the parent directory of all user specific directories We use nano editor to create shell scripts with the SHELL.
-                            </p> <br> --> 
-                            <p>Just like Windows, iOS, and Mac OS, Linux is an operating system. 
-                                In fact, one of the most popular platforms on the planet, Android, is powered by the Linux operating system. 
-                                An operating system is software that manages all of the hardware resources associated with your desktop or laptop. 
-                                To put it simply, the operating system manages the communication between your software and your hardware. 
-                                Without the operating system (OS), the software wouldn't function.
-                                The Linux operating system comprises several different pieces:</p>
-                            <p><code>Bootloader, Kernel, Init system, Daemons, Graphical server, Desktop environment, Applications.</code></p>    
-                            <p>A shell is special user program which provide an interface to user to use operating system services.
-                            We usually save the shell scripts using <code>.sh</code>extension as it is a commonly used convention. <code>.sh</code> is for UNIX/Linux to understand that this is a script and does not hold a similar prominence for file extension as in regard to
-                                Windows OS. Include <code>#!/bin/bash</code> on top of the script to know that the script was written in BASH Shell. 
-                            </p><br>
+                            <p>
 
+
+                                When you work with Shell Scripts in UNIX or Linux, you always must consider the SHELL that you are using whether it’s a BashShell, a KornShell, a C Shell and so on. The reason is because the syntax is a little different in the handling of variables and
+                                functions etc. As part of examples used as part of this document, we use BashShell. First, to verify the shell you are using in UNIX/Linux – type echo $SHELL. Now SHELL is a variable name and its uppercase. So $SHELL will
+                                report back to Shell that we are currently using and it reports /bin/bash where bash is Bourne-again SHELL. echo $SHELL – gives you the type of the shell echo $HOME – happens to be the parent directory of all user specific
+                                directories We use nano editor to create shell scripts with the SHELL.
+                                <p>&nbsp;</p>
+                                We usually save the shell scripts using .sh extension as it is a commonly used convention. .sh is for UNIX/Linux to understand that this is a script and does not hold a similar prominence for file extension as in regard to Windows OS. Include #!/bin/bash
+                                on top of the script to know that the script was written in BASH Shell. Below is the Hello World bash script – script1.sh. Line starting with # is a comment line. #!/bin/bash #Display a message clear echo “Hello World”
+                                Ctrl+O to SAVE. Ctrl+O will write it out to the file system. So, the file name is already there. I'm going to press Enter and then I'll press Ctrl+X to exit. To execute this script ./script1.sh needs to be called from the
+                                Shell prompt. To execute a file, we need to have required permissions on the file. ls -l command will give us the permission matrix on the files available on the respective directory. ls -a will list all files along with
+                                the hidden files which are set with (.) in the beginning of their name.
+                                <p>&nbsp;</p>
+                                Permissions set -rw-r- -r- - [Owner][Owning Group][EveryoneElse]. The permission set, we've got read and write for the owner. We've got read for the owning group. So as the owner is root. The owning group is also called root and then we've got read for
+                                everyone else. What we don't have is execute for anybody. So, for example, if I type in change mode or chmod +x to add the execute permission, and then we apply that to script1.sh and now let's do a ls -l, the permission
+                                set will be updated to -rwxrwxrwx. Notice that we've got an x now for the owner, for the owning group, and for everybody.
+
+
+
+                            </p>
                         </div>
                     </div>
                 </div>

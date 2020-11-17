@@ -24,7 +24,6 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src='tabs.js'></script>
     <script type="text/javascript" src='check.js'></script>
     <script>
@@ -41,39 +40,6 @@
         ga('create', 'UA-67558473-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <style>
-
-        /* CSS By Kishore Narang @ www.kishorenarang.com */
-        table.kishore-table{
-            margin-left: auto;
-            margin-right: auto;
-        }
-        td.kishore-td{
-            padding: 10px;
-        }
-        td.kishore-text-right
-        {
-            text-align: right;;
-        }
-
-        .textBox
-        {
-            overflow:auto;
-        }
-        @media only screen and (max-width:690px) {
-
-
-            td.kishore-td{
-                display: block;
-                width: 100%;;
-            }
-            
-
-            .formInput{
-                width: inherit;;
-            }
-        }
-    </style>
 </head>
 
 <body id="page-top" class="index">
@@ -90,7 +56,7 @@
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
 			                </button>
-                        <a class="navbar-brand main-logo-a" href="index.html"><img src="images/logo-new.png" class="img-responsive main-logo" /></a>
+                        <a class="navbar-brand main-logo-a" href="http://vlabs.ac.in/index.html"><img src="images/logo-new.png" class="img-responsive main-logo" /></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -141,7 +107,7 @@
 
             <!-- =================================================================================================================================== -->
             <div class="container-fluid" style="margin-left: 35px; margin-right: 35px;">
-                <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; "><a href="introduction.html" class="sidebar-a">Computer Science & Engineering</a><br/></h2>
+                <h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; "><a href="http://vlabs.ac.in/computer-science-and-engineering-labs.html" class="sidebar-a">Computer Science & Engineering</a><br/></h2>
 
                 <div class="row">
                     <div class="col-md-2 sidebar-col-2">
@@ -149,24 +115,21 @@
                         <a href="introduction.html" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3>
                         </a>
-                        <a href="commands.html" class="sidebar-a">
+                        <a href="#" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Linux Commands</h3>
                         </a>
                         <a href="shellscript.html" class="sidebar-a">
                             <h3 class="text-h3-darkblue" style="margin-top: 2px;">Shell Script</h3>
                         </a>
-                        <a href="quiz.html" class="sidebar-a">
-                            <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quiz</h3>
-                        </a>
                         <a href="#" class="sidebar-a">
-                            <h3 class="text-h3-darkblue" style="margin-top: 2px;">Linux Lab</h3>
+                            <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quiz</h3>
                         </a>
                     </div>
 
                     <div class="col-md-10 lab-list-col-10">
 
                         <!--edit -->
-                        <h1 class="sectionHeader"> Student Login Details - Linux Labs</h1>
+                        <h1 class="sectionHeader"> Student Login Details </h1>
                         <!--   Section Heading    -->
                         <hr class="rowBorder">
                         <!--     Horizontal Row Border    -->
@@ -175,7 +138,7 @@
                         <div class="textBox">
                             <!--  Box where text is added -->
 
-                            <span class="validateText"> Kindly submit your details. </span>
+                            <span class="validateText"> Kindly submit your details to access LXC Virtual Lab !!! </span>
                             <p>&nbsp;</p>
                             <br>
 
@@ -184,29 +147,13 @@
 
                                 <form action="introduction.html" onsubmit="return validateEmail(this)">
 
-                                    <table class="kishore-table">
-                                        <tr>
-                                            <td class="kishore-td">
-                                                <span class="formDetails">Name : </span>
-                                            </td>
-                                            <td class="kishore-td">
-                                                <input type="text" name="userName" class="form-control formInput">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="kishore-td">
-                                                <span class="formDetails">Student Email : </span>
-                                            </td>
-                                            <td class="kishore-td">
-                                                <input type="text" name="userEmail" class="form-control formInput">
-                                            </td>
-                                        </tr>
-                                   </table>
+
+                                    <span class="formDetails">Name : </span> &nbsp; &nbsp; <input type="text" name="userName" class="formInput"><br>
+                                    <p>&nbsp;</p>
+                                    <span class="formDetails1">Student Email : </span> &nbsp; &nbsp; <input type="text" name="userEmail" class="formInput1"><br>
+                                    <p>&nbsp;</p>
                                     <!--   <span class="formDetails1">Faculty Email : </span>  &nbsp;  &nbsp;  <input type="text" name="facultyEmail" class="formInput1"><br><br>  -->
                                     <button type="submit" value="Submit" class="submitBtn">Submit</button>
-
-
-
 
                                 </form>
 
@@ -215,7 +162,6 @@
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>

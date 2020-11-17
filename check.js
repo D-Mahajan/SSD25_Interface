@@ -1,15 +1,6 @@
 q1m = 0;
 q2m = 0;
 q3m = 0;
-q4m = 0;
-q5m = 0;
-q6m = 0;
-q7m = 0;
-q8m = 0;
-q9m = 0;
-q10m = 0;
-
-var globalStudent;
 
 $(document).ready(function() {
 
@@ -192,7 +183,7 @@ function q1Marks(rad) {
     // alert(c1);
 
 
-    if (c1 == "Bat") {
+    if (c1 == "Delhi") {
         q1m = 1;
     }
 
@@ -205,7 +196,7 @@ function q2Marks(rad) {
     var c1 = document.getElementById(rad.id).value;
 
 
-    if (c1 == "echo ${array[@]}") {
+    if (c1 == "Cricket") {
         q2m = 1;
     }
 
@@ -218,97 +209,10 @@ function q3Marks(rad) {
     var c1 = document.getElementById(rad.id).value;
 
 
-    if (c1 == "function test(){ Commands }") {
+    if (c1 == "MI") {
         q3m = 1;
     }
 
-
-}
-
-function q4Marks(rad) {
-
-    q4m = 0;
-    var c1 = document.getElementById(rad.id).value;
-
-
-    if (c1 == "read command") {
-        q4m = 1;
-    }
-
-
-}
-
-function q5Marks(rad) {
-
-    q5m = 0;
-    var c1 = document.getElementById(rad.id).value;
-
-
-    if (c1 == "Disp command") {
-        q5m = 1;
-    }
-
-
-
-}
-
-function q6Marks(rad) {
-
-    q6m = 0;
-    var c1 = document.getElementById(rad.id).value;
-
-
-    if (c1 == "Display of files and folders, present in the folder where you are") {
-        q6m = 1;
-    }
-
-}
-
-function q7Marks(rad) {
-
-    q7m = 0;
-    var c1 = document.getElementById(rad.id).value;
-
-
-    if (c1 == "rm filename") {
-        q7m = 1;
-    }
-
-}
-
-function q8Marks(rad) {
-
-    q8m = 0;
-    var c1 = document.getElementById(rad.id).value;
-
-
-    if (c1 == "Its mainly used for showing up all parameters. This show all parameter values passed in shell script.") {
-        q8m = 1;
-    }
-
-}
-
-function q9Marks(rad) {
-
-    q9m = 0;
-    var c1 = document.getElementById(rad.id).value;
-
-
-    if (c1 == "chmod +x") {
-        q9m = 1;
-    }
-
-}
-
-function q10Marks(rad) {
-
-    q10m = 0;
-    var c1 = document.getElementById(rad.id).value;
-
-
-    if (c1 == "2") {
-        q10m = 1;
-    }
 
 }
 
@@ -320,9 +224,15 @@ function q10Marks(rad) {
 function sendEmail() {
 
 
-
+    console.log("Hi");
     Email.send({
-
+            Host: "smtp.gmail.com",
+            Username: "piyushmohapatra1997@gmail.com",
+            Password: "Baba@banu1997",
+            To: "mohapatra.abhisek97@gmail.com",
+            From: "piyushmohapatra1997@gmail.com",
+            Subject: "Sending Email using javascript",
+            Body: "Check Inbox.Marks Here!!",
             /*  Body: `"<p>Greetings!!!!</p><p>&nbsp;</p> <p>&nbsp;</p> 
               
               <p>Your student has scored a total of "`+tot+`" marks out of 3 marks"`,  */
@@ -336,39 +246,15 @@ function sendEmail() {
 
 
 function resultDisplay() {
-    console.log("Hi");
 
     total_marks = 0;
-    total_marks = q1m + q2m + q3m + q4m + q5m + q6m + q7m + q8m + q9m + q10m;
+    total_marks = q1m + q2m + q3m;
     // alert("Marks obtained : "+total_marks);
     $('input[name="q1"]').prop('checked', false);
     $('input[name="q2"]').prop('checked', false);
     $('input[name="q3"]').prop('checked', false);
-    $('input[name="q4"]').prop('checked', false);
-    $('input[name="q5"]').prop('checked', false);
-    $('input[name="q6"]').prop('checked', false);
-    $('input[name="q7"]').prop('checked', false);
-    $('input[name="q8"]').prop('checked', false);
-    $('input[name="q9"]').prop('checked', false);
-    $('input[name="q10"]').prop('checked', false);
 
-    swal({
-        title: "Total Marks obtained : ",
-        text: total_marks + "/10",
-        icon: "info",
-    });
-
-    //alert("Total Marks obtained : " + total_marks);
-    q1m = 0;
-    q2m = 0;
-    q3m = 0;
-    q4m = 0;
-    q5m = 0;
-    q6m = 0;
-    q7m = 0;
-    q8m = 0;
-    q9m = 0;
-    q10m = 0;
+    alert("Marks obtained : " + total_marks);
 
 
     //sendEmail(total_marks);
@@ -382,17 +268,9 @@ function validateEmail(form) {
     var mailString = /([a-zA-Z0-9._-])+@[a-zA-Z0-9.-]+.com{1}$/ // Checks for Email address of the form anything with atmost 1 . or _ and ending with .com
 
     var inputString = form.userEmail.value;
-    var name_student = form.userName.value;
-    globalStudent = name_student;
-
 
     if (!mailString.test(inputString)) {
-        swal({
-            title: "Error",
-            text: "Kindly Enter A Valid Email Address",
-            icon: "error",
-        });
-        // alert(" Kindly Enter valid Email Address ");
+        alert(" Kindly Enter valid Email Address ");
         form.userEmail.focus();
         form.userEmail.select();
 
