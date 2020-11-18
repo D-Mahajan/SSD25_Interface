@@ -1,4 +1,4 @@
-var Questions = { 
+var Questions = { // Nov 10 6:15 pm
     "qArray": [{
             "question": "Which of the following is not a Shell ?",
             "option1": "Bat",
@@ -35,6 +35,62 @@ var Questions = {
             "correctAns": "read command"
         },
 
-       
+        {
+            "question": "Which of the below commands NOT used to view the contents of a file?",
+            "option1": "Ls command",
+            "option2": "Cat command",
+            "option3": "More command",
+            "option4": "Disp command",
+            "correctAns": "Disp command"
+        },
+        {
+            "question": "What does the command ls do?",
+            "option1": "Shows a calendar",
+            "option2": "Display of files and folders, present in the folder where you are",
+            "option3": "Opening a file",
+            "option4": "Display of the contents of a file",
+            "correctAns": "Display of files and folders, present in the folder where you are"
+        },
+        {
+            "question": "How do you delete a file?",
+            "option1": "rm filename",
+            "option2": "dl filename",
+            "option3": "touch filename",
+            "option4": "less filename",
+            "correctAns": "rm filename"
+        },
+        {
+            "question": "In Shell scripting what is $*?",
+            "option1": "Its mainly used for showing up all parameters. This show few parameter values passed in shell script.",
+            "option2": "Its mainly used for showing up all parameters. This show all values returned.",
+            "option3": "Its mainly used for showing up all parameters. This show all parameter values passed in shell script.",
+            "option4": "None of the above",
+            "correctAns": "Its mainly used for showing up all parameters. This show all parameter values passed in shell script."
+        },
+        {
+            "question": "To run the script, we should make it executable first by using :",
+            "option1": "chmod +x",
+            "option2": "chmod +r",
+            "option3": "chmod +w",
+            "option4": "chmod +rwx",
+            "correctAns": "chmod +x"
+        },
+        {
+            "question": `add () {
+                a=5 
+                result=$(( $1 + $2 ))  
+                result=result-$a  
+              }  
+              add 3 4  
+              echo $result  `,
+            "option1": "12",
+            "option2": "7",
+            "option3": "1",
+            "option4": "2",
+            "correctAns": "2"
+        },
+        {
+
+        }
     ]
 };
