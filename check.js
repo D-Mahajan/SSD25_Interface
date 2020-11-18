@@ -207,7 +207,7 @@ function validateEmail(form) {
     if (!mailString.test(inputString)) {
         swal({
             title: "Error",
-            text: "Kindly Enter A Valid Email Address !!",
+            text: "Kindly Enter A Valid Email Address",
            // icon: "error",
         });
         // alert(" Kindly Enter valid Email Address ");
