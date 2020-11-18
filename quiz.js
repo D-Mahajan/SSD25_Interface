@@ -90,7 +90,44 @@ var Questions = { // Nov 10 6:15 pm
             "correctAns": "2"
         },
         {
-
+            "question": "How will you list only the empty lines in a file (using grep)?",
+            "option1": "Grep “$^” filename.txt",
+            "option2": "Grep “$” filename.txt",
+            "option3": "Grep “^$” filename.txt",
+            "option4": "Grep $^ filename.txt",
+            "correctAns": "Grep “^$” filename.txt"
+        },
+        {
+            "question": "How will you find the 99th line of a file using only tail and head command?",
+            "option1": "Tail +99 file1|head +1",
+            "option2": "Tail -99 file1|head -1",
+            "option3": "Tail -99 file1|head +1",
+            "option4": "Tail +99 file1|head -1",
+            "correctAns": "Tail +99 file1|head -1"
+        },
+        {
+            "question": "Linux has how many standard streams?",
+            "option1": "2",
+            "option2": "3",
+            "option3": "4",
+            "option4": "5",
+            "correctAns": "3"
+        },
+        {
+            "question": "Which of the following commands is used to duplicate each line in a file?",
+            "option1": "sed 'f' < filename",
+            "option2": "sed 'p' < filename",
+            "option3": "sed 'p' > filename",
+            "option4": "sed 'p' -a < filename",
+            "correctAns": "sed 'p' < filename"
+        },
+        {
+            "question": "What type of block contains all the information about a file?",
+            "option1": "Boot block",
+            "option2": "Super block",
+            "option3": "Inode block",
+            "option4": "Command block",
+            "correctAns": "Inode block"
         }
     ]
 };
