@@ -4,6 +4,25 @@ var globalStudent;
 
 $(document).ready(function() {
 
+    var x=localStorage.getItem("email");
+    $('#target').attr('href', x);
+
+    $('#uemail').change(function() {   // Link to linux container
+        //var newurl = $('#pdf').val();
+        
+       // var newurl = globalStudent;
+       var changeText = $("#uname").val().replace(/ /g,'');
+    //   var newurl = "terminal/"+$('#uname').val()+"-"+$('#uemail').val();
+
+    var newurl = "terminal/"+changeText+"-"+$('#uemail').val();
+
+        $('#target').attr('href', newurl);
+        localStorage.setItem("email", newurl);
+       // window.open(newurl, '_blank');
+       // console.log(newurl);
+      });
+
+
     $(".btn-lg1").click(function() { // When Personal Background Button is clicked
 
 
