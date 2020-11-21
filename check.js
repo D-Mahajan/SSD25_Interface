@@ -1,26 +1,24 @@
-
-
 var globalStudent;
 
 $(document).ready(function() {
 
-    var x=localStorage.getItem("email");
+    var x = localStorage.getItem("email");
     $('#target').attr('href', x);
 
-    $('#uemail').change(function() {   // Link to linux container
+    $('#uemail').change(function() { // Link to linux container
         //var newurl = $('#pdf').val();
-        
-       // var newurl = globalStudent;
-       var changeText = $("#uname").val().replace(/ /g,'');
-    //   var newurl = "terminal/"+$('#uname').val()+"-"+$('#uemail').val();
 
-    var newurl = "terminal/"+changeText+"-"+$('#uemail').val();
+        // var newurl = globalStudent;
+        var changeText = $("#uname").val().replace(/ /g, '');
+        //   var newurl = "terminal/"+$('#uname').val()+"-"+$('#uemail').val();
+
+        var newurl = "terminal/" + changeText + "-" + $('#uemail').val();
 
         $('#target').attr('href', newurl);
         localStorage.setItem("email", newurl);
-       // window.open(newurl, '_blank');
-       // console.log(newurl);
-      });
+        // window.open(newurl, '_blank');
+        // console.log(newurl);
+    });
 
 
     $(".btn-lg1").click(function() { // When Personal Background Button is clicked
@@ -216,7 +214,10 @@ function sendEmail() {
 
 
 function validateEmail(form) {
-    var mailString = /([a-zA-Z0-9._-])+@[a-zA-Z0-9.-]+.com{1}$/ // Checks for Email address of the form anything with atmost 1 . or _ and ending with .com
+    //var mailString = /([a-zA-Z0-9._-])+@[a-zA-Z0-9.-]+.com{1}$/ // Checks for Email address of the form anything with atmost 1 . or _ and ending with .com
+
+    //var mailString = /[a-zA-Z0-9._%+-]+@*$/ // Checks for Email address of the form anything with atmost 1 . or _ and ending with .com
+    var mailString = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$/
 
     var inputString = form.userEmail.value;
     var name_student = form.userName.value;
@@ -227,7 +228,7 @@ function validateEmail(form) {
         swal({
             title: "Error",
             text: "Kindly Enter A Valid Email Address",
-           // icon: "error",
+            // icon: "error",
         });
         // alert(" Kindly Enter valid Email Address ");
         form.userEmail.focus();
